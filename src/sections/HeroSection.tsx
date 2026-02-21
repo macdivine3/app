@@ -9,8 +9,8 @@ export default function HeroSection() {
         offset: ["start start", "end start"]
     });
 
-    const y = useTransform(scrollYProgress, [0, 1], [0, 80]);
-    const opacity = useTransform(scrollYProgress, [0, 0.8], [1, 0]);
+    const y = useTransform(scrollYProgress, [0, 1], [0, 30]);
+    const opacity = useTransform(scrollYProgress, [0, 0.95], [1, 0]);
 
     return (
         <section ref={ref} className="relative min-h-screen overflow-hidden">

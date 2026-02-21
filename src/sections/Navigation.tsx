@@ -72,7 +72,7 @@ export default function Navigation() {
               onClick={() => navigate('/login')}
               className="hidden sm:flex bg-red-600 hover:bg-red-700 text-white px-6 py-3 rounded-full font-semibold text-sm transition-colors shadow-lg shadow-red-600/30"
             >
-              Open account
+              Log in
             </motion.button>
             <button className="p-2 hover:bg-gray-100 rounded-full transition-colors">
               <Globe className="w-5 h-5 text-gray-700" />
@@ -111,7 +111,7 @@ export default function Navigation() {
                 className="w-full bg-red-600 text-white px-6 py-3 rounded-full font-semibold mt-4"
                 onClick={() => { setIsMobileMenuOpen(false); navigate('/login'); }}
               >
-                Open account
+                Log in
               </button>
             </div>
           </motion.div>
