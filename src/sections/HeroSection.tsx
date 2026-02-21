@@ -38,7 +38,7 @@ export default function HeroSection() {
                             transition={{ duration: 0.8, delay: 0.2 }}
                             className="text-5xl sm:text-6xl lg:text-7xl font-bold leading-tight"
                         >
-                            <span className="text-red-600">UBS.</span>{' '}
+                            <span className="text-red-600">UBS wealth Management.</span>{' '}
                             <span className="text-red-600">Because your wealth deserves more.</span>
                         </motion.h1>
 
