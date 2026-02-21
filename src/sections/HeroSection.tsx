@@ -9,8 +9,8 @@ export default function HeroSection() {
         offset: ["start start", "end start"]
     });
 
-    const y = useTransform(scrollYProgress, [0, 1], [0, 200]);
-    const opacity = useTransform(scrollYProgress, [0, 0.5], [1, 0]);
+    const y = useTransform(scrollYProgress, [0, 1], [0, 80]);
+    const opacity = useTransform(scrollYProgress, [0, 0.8], [1, 0]);
 
     return (
         <section ref={ref} className="relative min-h-screen overflow-hidden">
@@ -20,6 +20,8 @@ export default function HeroSection() {
                     src="/hero-sky.jpg"
                     alt="Sky background"
                     className="w-full h-full object-cover"
+                    style={{ willChange: 'transform' }}
+                    loading="eager"
                 />
                 <div className="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-white/80" />
             </div>
@@ -94,6 +96,8 @@ export default function HeroSection() {
                                 src="/hero-woman.png"
                                 alt="Happy woman using phone"
                                 className="w-full h-auto object-contain"
+                                style={{ willChange: 'transform' }}
+                                loading="eager"
                             />
                         </motion.div>
 
